@@ -132,20 +132,20 @@ def login():
                                                      msg=msg) )
 
 # Used only for static export
-#@app.route('/components.html')
-#def components():
-#
-#  return render_template('layouts/default.html',
-#                           page = "index",
-#                           content=render_template( 'pages/components.html') )
+@app.route('/components.html')
+def components():
+
+  return render_template('layouts/default.html',
+                           page = "index",
+                           content=render_template( 'pages/components.html') )
 
 # Used only for static export
-#@app.route('/profile.html')
-#def profile():
-#
-#   return render_template('layouts/default.html',
-#                           page = "profile",
-#                           content=render_template( 'pages/profile.html') )
+@app.route('/profile.html')
+def profile():
+
+   return render_template('layouts/default.html',
+                           page = "profile",
+                           content=render_template( 'pages/profile.html') )
 
 # App main route + generic routing
 @app.route('/', defaults={'path': 'index.html'})
