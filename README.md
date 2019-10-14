@@ -1,6 +1,6 @@
-# [Flask Material Kit](https://flask-material-kit.appseed.us/)
+# [Flask Material Kit](https://appseed.us/apps/flask-apps/flask-material-kit)
 
-Open-Source [Flask](https://palletsprojects.com/p/flask/) app enhanced with [SQLite](https://www.sqlite.org/index.html) database, authentication, [SQLAlchemy ORM](https://www.sqlalchemy.org/) and a beautiful UI - [Material Kit Design](https://www.creative-tim.com/product/material-kit) by Creative-Tim.
+Open-Source [Flask](https://palletsprojects.com/p/flask/) app enhanced with [SQLite](https://www.sqlite.org/index.html) database, authentication, [SQLAlchemy ORM](https://www.sqlalchemy.org/) and a beautiful UI - **Material Kit Design** by Creative-Tim.
 
 <br />
 
@@ -46,12 +46,12 @@ $ # App is running on http://localhost:5000
 
 ## Links & Resources
 
-- [Flask Material Kit](https://github.com/app-generator/flask-material-kit) - live demo
-- [Material Kit Design](https://www.creative-tim.com/product/material-kit) - the design provided by Creative-Tim 
+- [Flask Material Kit](https://flask-material-kit.appseed.us/) - Live DEMO
+- [Flask Material Kit](https://appseed.us/apps/flask-apps/flask-material-kit) - product page
 - [Flask](https://palletsprojects.com/p/flask/) - offcial website
 - A curated list with production-ready [Flask Apps](https://appseed.us/apps/flask-apps)
 
 <br />
 
 ---
-[Flask Material Kit](https://flask-material-kit.appseed.us/) - provided by **AppSeed**
+[Flask Material Kit](https://appseed.us/apps/flask-apps/flask-material-kit) - provided by **AppSeed**
