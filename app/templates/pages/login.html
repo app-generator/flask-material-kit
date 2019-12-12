@@ -1,0 +1,76 @@
+{% extends "layouts/base-site-fullscreen.html" %}
+
+{% block title %} Login {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+    <div class="card card-login">
+
+      <form class="form" method="post" action="">
+        
+        {{ form.hidden_tag() }}
+
+        <div class="card-header card-header-primary text-center">
+          <h4 class="card-title">Login</h4>
+          <div class="social-line">
+            <a href="#pablo" class="btn btn-just-icon btn-link">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+            <a href="#pablo" class="btn btn-just-icon btn-link">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#pablo" class="btn btn-just-icon btn-link">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </div>
+        </div>
+        <p class="description text-center">
+        
+          {% if msg %}
+            <span class="text-danger">{{ msg | safe }}</span>
+          {% else %}
+            Sign in to continue
+          {% endif %}  
+
+        </p>
+        <div class="card-body">
+          
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="material-icons">face</i>
+              </span>
+            </div>
+            {{ form.username(class="form-control") }}
+          </div>
+        
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="material-icons">lock_outline</i>
+              </span>
+            </div>
+            {{ form.password(class="form-control", type="password") }}
+          </div>
+
+        </div>
+        <div class="footer text-center">
+          <button type="submit" name="login" class="btn btn-primary btn-link btn-wd btn-lg">Login</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="footer text-center">
+      <span>Not a member? <a class="text-white" href={{ url_for('register') }} >Register</a> </span>
+    </div>
+    
+  </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
