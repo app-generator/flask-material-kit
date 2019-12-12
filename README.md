@@ -1,6 +1,6 @@
 # [Flask Material Kit](https://appseed.us/apps/flask-apps/flask-material-kit)
 
-**[Open-Source Admin Dashboard](https://appseed.us/admin-dashboards/flask-material-kit)** coded in **Flask Framework** on top of **Material Kit** design. **Features**:
+**[Open-Source Web App](https://appseed.us/apps/flask-apps/flask-material-kit)** coded in **Flask Framework** on top of **Material Kit** design. **Features**:
 
 <br />
 
@@ -11,7 +11,7 @@
 
 <br />
 
-![Flask Material Kit - Open-Source Flask Dashboard.](https://raw.githubusercontent.com/app-generator/static/master/products/flask-material-kit-intro.gif)
+![Flask Material Kit - Open-Source Web App.](https://raw.githubusercontent.com/app-generator/static/master/products/flask-material-kit-intro.gif)
 
 <br />
 
@@ -75,9 +75,7 @@ $ # Access the app in browser: http://127.0.0.1:5000/
 - [Flask Material Kit](https://appseed.us/admin-dashboards/flask-material-kit) - Product page
 - [Flask Material Kit](https://flask-material-kit.appseed.us/) - Live DEMO
 - [Flask Framework](https://www.palletsprojects.com/p/flask/) - The offcial website
-- [Flask Dashboard - Open-Source Boilerplates](https://dev.to/sm0ke/flask-dashboard-open-source-boilerplates-dkg) - A popular article published on Dev.to platform
-- [Flask Dashboard](https://admin-dashboards.com/tags/flask-dashboard) - Index provided by **Admin-Dashboards.com**
-
+- [Flask Boilerplate - Open-Source Apps built with automation tools](https://dev.to/sm0ke/flask-boilerplate-open-source-apps-built-with-automation-tools-4925) - a popular article published on **Dev.to** platform
 <br />
 
 ## License
