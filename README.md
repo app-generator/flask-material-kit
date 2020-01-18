@@ -11,7 +11,7 @@
 
 <br />
 
-![Flask Material Kit - Open-Source Web App.](https://raw.githubusercontent.com/app-generator/static/master/products/flask-material-kit-intro.gif)
+![Flask Material Kit - Open-Source Web App.](https://raw.githubusercontent.com/app-generator/static/master/products/flask-material-kit-screen.png)
 
 <br />
 
