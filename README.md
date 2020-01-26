@@ -1,6 +1,6 @@
 # [Flask Material Kit](https://appseed.us/apps/flask-apps/flask-material-kit)
 
-**[Open-Source Web App](https://appseed.us/apps/flask-apps/flask-material-kit)** coded in **Flask Framework** on top of **Material Kit** design. **Features**:
+**Open-Source Web App** coded in **Flask Framework** on top of **Material Kit** design. **Features**:
 
 <br />
 
@@ -9,6 +9,19 @@
 - Session-Based authentication flow (login, register)
 - UI Kit: [Material Kit](https://github.com/app-generator/fork-material-kit-design) by **Creative-Tim**
 
+<br />
+
+<br />
+
+## Want more? Go PRO!
+
+PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Support** (via [Discord](https://discord.gg/fZC6hup))
+
+| [Flask Dashboard Material PRO](https://appseed.us/admin-dashboards/flask-dashboard-material-pro) | [Flask Dashboard Dashkit PRO](https://appseed.us/admin-dashboards/flask-dashboard-dashkit-pro) | [Flask Dashboard Black PRO](https://appseed.us/admin-dashboards/flask-dashboard-black-pro) |
+| --- | --- | --- |
+| [![Flask Dashboard Material PRO](https://raw.githubusercontent.com/app-generator/static/master/products/flask-dashboard-material-pro-screen.png)](https://appseed.us/admin-dashboards/flask-dashboard-material-pro)  | [![Flask Dashboard Dashkit PRO](https://raw.githubusercontent.com/app-generator/static/master/products/flask-dashboard-dashkit-pro-screen.png)](https://appseed.us/admin-dashboards/flask-dashboard-dashkit-pro) | [![Flask Dashboard Black PRO](https://raw.githubusercontent.com/app-generator/static/master/products/flask-dashboard-black-pro-screen.png)](https://appseed.us/admin-dashboards/flask-dashboard-black-pro)
+
+<br />
 <br />
 
 ![Flask Material Kit - Open-Source Web App.](https://raw.githubusercontent.com/app-generator/static/master/products/flask-material-kit-screen.png)
