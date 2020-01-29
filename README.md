@@ -1,8 +1,8 @@
 # [Flask Material Kit](https://appseed.us/apps/flask-apps/flask-material-kit)
 
-**Open-Source Web App** coded in **Flask Framework** on top of **Material Kit** design. **Features**:
+**Open-Source Web App** coded in **[Flask Framework](https://palletsprojects.com/p/flask/)** - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
 
-<br />
+### App Features:
 
 - SQLite database
 - SQLAlchemy ORM
@@ -88,4 +88,4 @@ $ # Access the app in browser: http://127.0.0.1:5000/
 <br />
 
 ---
-[Flask Material Kit](https://appseed.us/apps/flask-apps/flask-material-kit) provided by **AppSeed**
+[Flask Material Kit](https://appseed.us/apps/flask-apps/flask-material-kit) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
