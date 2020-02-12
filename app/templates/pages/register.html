@@ -34,7 +34,9 @@
             {% if msg %}
               <span class="text-danger">{{ msg | safe }}</span>
             {% else %}
-              Add your credentials
+              Add your credentials 
+              <br />
+              OR <a href={{ url_for('login') }} >authenticate</a> with an existing account.
             {% endif %} 
 
           </p>
