@@ -1,8 +1,8 @@
-# [Flask Boilerplate](https://appseed.us/boilerplate-code/flask-boilerplate)
+# Flask Material Kit
 
-> Template [boilerplate code](https://appseed.us/boilerplate-code) used by [AppSeed](https://appseed.us) to generate simple admin dashboards coded in [Flask](https://palletsprojects.com/p/flask/) - Features:
+Open-Source **Flask** starter coded with basic modules, database, ORM, and deployment scripts on top of **Material Kit** (free version). For newcomers, Material Kit is a Free Bootstrap 4 UI Kit with a fresh, new design inspired by Google's material design. This simple Flask project can be used to code beautiful websites with a modern design.
 
-- UI Kit: **Quick** (Free Version) by **Webpixels**
+- UI Kit: **Material Kit** (Free Version) by **Creative Tim**
 - SQLite database, Flask-SQLAlchemy ORM
 - Session-Based auth flow (login, register)
 - Deployment scripts: Docker, Gunicorn / Nginx, Heroku
@@ -12,24 +12,12 @@
 
 > Links
 
-- [Boierplate Code Flask](https://appseed.us/boilerplate-code/flask-boilerplate) - Product page
-- [Boierplate Code Flask - Demo](https://boilerplate-code-flask.appseed.us/) - LIVE Demo
-- [Boierplate Code Flask - Docs](https://docs.appseed.us/boilerplate-code/flask/) - Documentation
+- [Flask Material Kit](https://appseed.us/boilerplate-code/flask-boilerplate) - product page
+- [Flask Material Kit](flask-material-kit.appseed-srv1.com) - LIVE Demo
 
 <br />
 
-## Want more? Go PRO!
-
-PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Support** (via [Discord](https://discord.gg/fZC6hup))
-
-| [Flask Datta PRO](https://appseed.us/admin-dashboards/flask-dashboard-dattaable-pro) | [Flask Material PRO](https://appseed.us/admin-dashboards/flask-dashboard-material-pro) | [Flask Volt PRO](https://appseed.us/admin-dashboards/flask-dashboard-volt-pro) |
-| --- | --- | --- |
-| [![Flask Datta PRO](https://raw.githubusercontent.com/app-generator/flask-dashboard-dattaable-pro/master/media/flask-dashboard-dattaable-pro-screen.png)](https://appseed.us/admin-dashboards/flask-dashboard-dattaable-pro) | [![Flask Material PRO](https://raw.githubusercontent.com/app-generator/flask-dashboard-material-pro/master/media/flask-dashboard-material-pro-screen.png)](https://appseed.us/admin-dashboards/flask-dashboard-material-pro) | [![Flask Volt PRO](https://raw.githubusercontent.com/app-generator/flask-dashboard-volt-pro/master/media/flask-dashboard-volt-pro-screen.png)](https://appseed.us/admin-dashboards/flask-dashboard-volt-pro)
-
-<br />
-<br />
-
-![Boierplate Code Flask - Template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/boilerplate-code-flask/master/media/boilerplate-code-flask-screen.png)
+<!-- Product Image -->
 
 <br />
 
@@ -37,8 +25,8 @@ PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Suppo
 
 ```bash
 $ # Clone the sources
-$ git clone https://github.com/app-generator/boilerplate-code-flask.git
-$ cd boilerplate-code-flask
+$ git clone https://github.com/app-generator/flask-material-kit.git
+$ cd flask-material-kit
 $
 $ # Virtualenv modules installation (Unix based systems)
 $ virtualenv env
@@ -132,8 +120,8 @@ The application can be easily executed in a docker container. The steps:
 > Get the code
 
 ```bash
-$ git clone https://github.com/app-generator/boilerplate-code-flask.git
-$ cd boilerplate-code-flask
+$ git clone https://github.com/app-generator/flask-material-kit.git
+$ cd flask-material-kit
 ```
 
 > Start the app in Docker
@@ -158,8 +146,8 @@ Steps to deploy on **Heroku**
 
 ```bash
 $ # Clone the source code:
-$ git clone https://github.com/app-generator/boilerplate-code-flask.git
-$ cd boilerplate-code-flask
+$ git clone https://github.com/app-generator/flask-material-kit.git
+$ cd flask-material-kit
 $
 $ # Check Heroku CLI is installed
 $ heroku -v
@@ -232,4 +220,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-[Flask Boilerplate](https://appseed.us/boilerplate-code/flask-boilerplate) - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
+Flask Material Kit - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).

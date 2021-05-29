@@ -1,0 +1,53 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Error 404 {% endblock %} 
+
+{% block body_class %} login-page {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <div class="page-header header-filter" style="background-image: url('/static/assets/img/bg7.jpg'); background-size: cover; background-position: top center;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+          <div class="card card-login">
+            
+            <form class="form" method="" action="">
+
+              <div class="card-header card-header-primary text-center">
+                <h4 class="card-title">
+                    Error 404
+                </h4>                
+              </div>
+
+              <br />
+
+              <p class="description text-center">
+                    Page Not found - Please contact support.
+              </p>
+              <div class="card-body">
+
+                <br />
+
+                <div class="text-center">
+                  <a href="/" class="btn btn-primary btn-link btn-wd btn-lg">HOMEpage</a>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

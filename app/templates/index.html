@@ -1,95 +1,15 @@
-<!--
-=========================================================
-Material Kit - v2.0.7
-=========================================================
+{% extends "layouts/base.html" %}
 
-Product Page: https://www.creative-tim.com/product/material-kit
-Copyright 2020 Creative Tim (https://www.creative-tim.com/)
+{% block title %} Presentation {% endblock %} 
 
-Coded by Creative Tim
+{% block body_class %} index-page {% endblock %}
 
-=========================================================
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
-<!DOCTYPE html>
-<html lang="en">
+{% block content %}
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Material Kit by Creative Tim
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <!-- CSS Files -->
-  <link href="./assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="./assets/demo/demo.css" rel="stylesheet" />
-</head>
-
-<body class="index-page sidebar-collapse">
-  <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
-    <div class="container">
-      <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-          Material Kit </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i class="material-icons">apps</i> Components
-            </a>
-            <div class="dropdown-menu dropdown-with-icons">
-              <a href="./index.html" class="dropdown-item">
-                <i class="material-icons">layers</i> All Components
-              </a>
-              <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
-                <i class="material-icons">content_paste</i> Documentation
-              </a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-              <i class="material-icons">cloud_download</i> Download
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.creative-tim.com/product/material-kit-pro" target="_blank">
-              <i class="material-icons">unarchive</i> Upgrade to PRO
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" data-original-title="Follow us on Twitter" rel="nofollow">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" data-original-title="Like us on Facebook" rel="nofollow">
-              <i class="fa fa-facebook-square"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" data-original-title="Follow us on Instagram" rel="nofollow">
-              <i class="fa fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="page-header header-filter clear-filter purple-filter" data-parallax="true" style="background-image: url('./assets/img/bg2.jpg');">
+  <div class="page-header header-filter clear-filter purple-filter" data-parallax="true" style="background-image: url('/static/assets/img/bg2.jpg');">
     <div class="container">
       <div class="row">
         <div class="col-md-8 ml-auto mr-auto">
@@ -101,6 +21,7 @@ The above copyright notice and this permission notice shall be included in all c
       </div>
     </div>
   </div>
+
   <div class="main main-raised">
     <div class="section section-basic">
       <div class="container">
@@ -505,7 +426,7 @@ The above copyright notice and this permission notice shall be included in all c
       </div>
       <!--             navbar -->
       <div id="navbar">
-        <div class="navigation-example" style="background-image: url('./assets/img//bg.jpg');">
+        <div class="navigation-example" style="background-image: url('/static/assets/img//bg.jpg');">
           <!--        rose navbar with search form -->
           <nav class="navbar navbar-expand-lg bg-rose">
             <div class="container">
@@ -644,7 +565,7 @@ The above copyright notice and this permission notice shall be included in all c
                   <li class="dropdown nav-item">
                     <a href="javascript:;" class="profile-photo dropdown-toggle nav-link" data-toggle="dropdown">
                       <div class="profile-photo-small">
-                        <img src="./assets/img/faces/avatar.jpg" alt="Circle Image" class="rounded-circle img-fluid">
+                        <img src="/static/assets/img/faces/avatar.jpg" alt="Circle Image" class="rounded-circle img-fluid">
                       </div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
@@ -1081,19 +1002,19 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="row">
             <div class="col-sm-2">
               <h4>Rounded Image</h4>
-              <img src="./assets/img/faces/avatar.jpg" alt="Rounded Image" class="rounded img-fluid">
+              <img src="/static/assets/img/faces/avatar.jpg" alt="Rounded Image" class="rounded img-fluid">
             </div>
             <div class="col-sm-2 ml-auto">
               <h4>Circle Image</h4>
-              <img src="./assets/img/faces/avatar.jpg" alt="Circle Image" class="rounded-circle img-fluid">
+              <img src="/static/assets/img/faces/avatar.jpg" alt="Circle Image" class="rounded-circle img-fluid">
             </div>
             <div class="col-sm-2 ml-auto">
               <h4>Rounded Raised</h4>
-              <img src="./assets/img/faces/avatar.jpg" alt="Raised Image" class="img-raised rounded img-fluid">
+              <img src="/static/assets/img/faces/avatar.jpg" alt="Raised Image" class="img-raised rounded img-fluid">
             </div>
             <div class="col-sm-2 ml-auto">
               <h4>Circle Raised</h4>
-              <img src="./assets/img/faces/avatar.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+              <img src="/static/assets/img/faces/avatar.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
             </div>
           </div>
           <div class="row">
@@ -1175,7 +1096,7 @@ The above copyright notice and this permission notice shall be included in all c
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img class="d-block w-100" src="./assets/img/bg2.jpg" alt="First slide">
+                    <img class="d-block w-100" src="/static/assets/img/bg2.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
                       <h4>
                         <i class="material-icons">location_on</i>
@@ -1184,7 +1105,7 @@ The above copyright notice and this permission notice shall be included in all c
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="./assets/img/bg3.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="/static/assets/img/bg3.jpg" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
                       <h4>
                         <i class="material-icons">location_on</i>
@@ -1193,7 +1114,7 @@ The above copyright notice and this permission notice shall be included in all c
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="./assets/img/bg.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="/static/assets/img/bg.jpg" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
                       <h4>
                         <i class="material-icons">location_on</i>
@@ -1228,7 +1149,7 @@ The above copyright notice and this permission notice shall be included in all c
         </div>
       </div>
     </div>
-    <div class="section section-signup page-header" style="background-image: url('./assets/img/city.jpg');">
+    <div class="section section-signup page-header" style="background-image: url('/static/assets/img/city.jpg');">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-6 mx-auto">
@@ -1285,20 +1206,20 @@ The above copyright notice and this permission notice shall be included in all c
       </div>
     </div>
     <div class="col-md-12 text-center">
-      <a href="examples/login-page.html" class="btn btn-link btn-primary btn-lg" target="_blank">View Login Page</a>
+       Login Page
     </div>
     <div class="section section-examples">
       <div class="container-fluid text-center">
         <div class="row">
           <div class="col-md-6">
-            <a href="examples/landing-page.html" target="_blank">
-              <img src="./assets/img/landing.jpg" alt="Rounded Image" class="img-raised rounded img-fluid">
+            <a href="/landing-page.html" target="_blank">
+              <img src="/static/assets/img/landing.jpg" alt="Rounded Image" class="img-raised rounded img-fluid">
               <button class="btn  btn-link btn-primary btn-lg">View Landing Page</button>
             </a>
           </div>
           <div class="col-md-6">
-            <a href="examples/profile-page.html" target="_blank">
-              <img src="./assets/img/profile.jpg" alt="Rounded Image" class="img-raised rounded img-fluid">
+            <a href="/profile-page.html" target="_blank">
+              <img src="/static/assets/img/profile.jpg" alt="Rounded Image" class="img-raised rounded img-fluid">
               <button class="btn btn-link btn-primary btn-lg">View Profile Page</button>
             </a>
           </div>
@@ -1313,11 +1234,11 @@ The above copyright notice and this permission notice shall be included in all c
             <h4>Cause if you do, it can be yours for FREE. Hit the buttons below to navigate to our website where you can find the kit. Our friends from <a href="https://themeisle.com/?utm_campaign=mkfree-hestia&amp;utm_source=creativetim&amp;utm_medium=website" target="_blank" rel="nofollow">ThemeIsle</a> created a Wordpress Theme which can be also downloaded for free. Start a new project or give an old Bootstrap project a new look!</h4>
           </div>
           <div class="col-sm-8 col-md-6 mx-auto">
-            <a href="https://www.creative-tim.com/product/material-kit" class="btn btn-primary btn-lg">
-              <i class="fa fa-html5"></i> Free HTML Download
+            <a href="https://appseed.us/apps/flask-apps/flask-material-kit" class="btn btn-primary btn-lg">
+              <i class="fa fa-download"></i> Flask Version
             </a>
-            <a href="https://themeisle.com/themes/hestia/?utm_campaign=mkfree-hestia&amp;utm_source=creativetim&amp;utm_medium=website" target="_blank" class="btn btn-primary btn-lg" rel="nofollow">
-              <i class="fa fa-wordpress"></i> Wordpress Theme
+            <a href="https://bit.ly/3u2lZc6" target="_blank" class="btn btn-primary btn-lg" rel="nofollow">
+              <i class="fa fa-html5"></i> HTML Version
             </a>
           </div>
         </div>
@@ -1325,10 +1246,11 @@ The above copyright notice and this permission notice shall be included in all c
         <div class="row text-center">
           <div class="col-md-8 mx-auto">
             <h2>Want more?</h2>
-            <h4>We've just launched <a href="https://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-mk-demos" target="_blank">Material Kit PRO</a>. It has a huge number of components, sections and example pages. Start Your Development With A Badass Bootstrap UI Kit inspired by Material Design.</h4>
+            <h4>We've just launched <a href="https://flask-material-dashboard-pro.appseed-srv1.com/" target="_blank">Material Dashboard PRO</a>. 
+            It has a huge number of components, sections and example pages. Start Your Development With A Badass Bootstrap UI Kit inspired by Material Design.</h4>
           </div>
           <div class="col-sm-8 col-md-5 mx-auto">
-            <a href="https://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-mk-demos" class="btn btn-rose btn-upgrade btn-lg" target="_blank">
+            <a href="https://appseed.us/admin-dashboards/flask-dashboard-material-pro" class="btn btn-rose btn-upgrade btn-lg" target="_blank">
               <i class="material-icons">unarchive</i> Upgrade to PRO
             </a>
           </div>
@@ -1337,19 +1259,15 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="row justify-content-center">
             <h3>Thank you for supporting us!</h3>
           </div>
-          <a id="twitter" class="btn btn-raised btn-twitter" href="https://twitter.com/CreativeTim" rel="nofollow">
+          <a id="twitter" class="btn btn-raised btn-twitter" href="https://twitter.com/webappseed" rel="nofollow">
             <i class="fa fa-twitter"></i>
             Tweet
           </a>
-          <a id="facebook" class="btn btn-raised btn-facebook" href="https://www.facebook.com/CreativeTim" rel="nofollow">
+          <a id="facebook" class="btn btn-raised btn-facebook" href="https://www.facebook.com/webappseed" rel="nofollow">
             <i class="fa fa-facebook-square"></i>
             Facebook
           </a>
-          <a id="instagram" class="btn btn-raised btn-instagram" href="https://www.instagram.com/CreativeTimOfficial" rel="nofollow">
-            <i class="fa fa-instagram"></i>
-            Instagram
-          </a>
-          <a id="github" href="https://github.com/creativetimofficial/material-kit" target="_blank" class="btn btn-raised btn-github" rel="nofollow">
+          <a id="github" href="https://github.com/app-generator/flask-material-kit" target="_blank" class="btn btn-raised btn-github" rel="nofollow">
             <i class="fa fa-github"></i>
             Star
           </a>
@@ -1357,6 +1275,7 @@ The above copyright notice and this permission notice shall be included in all c
       </div>
     </div>
   </div>
+
   <!-- Classic Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -1378,54 +1297,12 @@ The above copyright notice and this permission notice shall be included in all c
       </div>
     </div>
   </div>
-  <!--  End Modal -->
-  <footer class="footer" data-background-color="black">
-    <div class="container">
-      <nav class="float-left">
-        <ul>
-          <li>
-            <a href="https://www.creative-tim.com/">
-              Creative Tim
-            </a>
-          </li>
-          <li>
-            <a href="https://www.creative-tim.com/presentation">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="https://www.creative-tim.com/blog">
-              Blog
-            </a>
-          </li>
-          <li>
-            <a href="https://www.creative-tim.com/license">
-              Licenses
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="copyright float-right">
-        &copy;
-        <script>
-          document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://www.creative-tim.com/" target="_blank">Creative Tim</a> for a better web.
-      </div>
-    </div>
-  </footer>
-  <!--   Core JS Files   -->
-  <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-  <script src="./assets/js/plugins/moment.min.js"></script>
-  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-  <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
-  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-  <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-  <!--  Google Maps Plugin    -->
-  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="./assets/js/material-kit.js?v=2.0.7" type="text/javascript"></script>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
   <script>
     $(document).ready(function() {
       //init DateTimePickers
@@ -1444,6 +1321,5 @@ The above copyright notice and this permission notice shall be included in all c
       }
     }
   </script>
-</body>
 
-</html>
+{% endblock javascripts %}
