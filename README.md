@@ -2,6 +2,10 @@
 
 Open-Source **Flask** starter coded with basic modules, database, ORM, and deployment scripts on top of **Material Kit** (free version). For newcomers, Material Kit is a Free Bootstrap 4 UI Kit with a fresh, new design inspired by Google's material design. This simple Flask project can be used to code beautiful websites with a modern design.
 
+<br />
+
+> Features:
+
 - UI Kit: **Material Kit** (Free Version) by **Creative Tim**
 - SQLite database, Flask-SQLAlchemy ORM
 - Session-Based auth flow (login, register)
