@@ -17,7 +17,7 @@ Open-Source **Flask** starter coded with basic modules, database, ORM, and deplo
 > Links
 
 - [Flask Material Kit](https://appseed.us/boilerplate-code/flask-boilerplate) - product page
-- [Flask Material Kit](flask-material-kit.appseed-srv1.com) - LIVE Demo
+- [Flask Material Kit](https://flask-material-kit.appseed-srv1.com) - LIVE Demo
 
 <br />
 
