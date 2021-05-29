@@ -22,7 +22,7 @@ Open-Source **Flask** starter coded with basic modules, database, ORM, and deplo
 
 <br />
 
-![Flask Material Kit - Open-source Flask starter ](https://user-images.githubusercontent.com/51070104/120078515-98806980-c0b8-11eb-9a4b-54413f229b6d.png)
+![Flask Material Kit - Open-source Flask starter.](https://user-images.githubusercontent.com/51070104/120080775-16e20900-c0c3-11eb-867b-c67bb165012f.png)
 
 <br />
 
