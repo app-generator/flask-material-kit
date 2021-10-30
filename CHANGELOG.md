@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.0.3] 2021-10-30
+## [1.0.2] 2021-10-30
 ### Improvements
 
 - Bump UI: Material Kit v3.0.0
