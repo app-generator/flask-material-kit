@@ -1,4 +1,4 @@
-# Flask Material Kit
+# [Flask Material Kit](https://appseed.us/apps/flask-apps/flask-material-kit)
 
 Open-Source **Flask** starter coded with basic modules, database, ORM, and deployment scripts on top of **Material Kit** (free version). For newcomers, Material Kit is a Free Bootstrap 4 UI Kit with a fresh, new design inspired by Google's material design. This simple Flask project can be used to code beautiful websites with a modern design.
 
@@ -18,7 +18,7 @@ Open-Source **Flask** starter coded with basic modules, database, ORM, and deplo
 
 > Links
 
-- [Flask Material Kit](https://appseed.us/boilerplate-code/flask-boilerplate) - product page
+- [Flask Material Kit](https://appseed.us/apps/flask-apps/flask-material-kit) - product page
 - [Flask Material Kit](https://flask-material-kit.appseed-srv1.com) - LIVE Demo
 - [Flask Material Kit](https://docs.appseed.us/products/flask-apps/material-kit) - product documentation
 
@@ -279,4 +279,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-Flask Material Kit - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
+[Flask Material Kit](https://appseed.us/apps/flask-apps/flask-material-kit) - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
