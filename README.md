@@ -6,7 +6,9 @@ Open-Source **Flask** starter coded with basic modules, database, ORM, and deplo
 
 > Features:
 
-- UI Kit: **Material Kit** (Free Version) by **Creative Tim**
+- Up-to-date [dependencies](./requirements.txt): **Flask 2.0.1**
+- [SCSS compilation](#recompile-css) via **Gulp**
+- UI Kit: **Material Dashboard - v3.0.0** (Bootstrap 5 Version) by **Creative-Tim**
 - SQLite database, Flask-SQLAlchemy ORM
 - Session-Based auth flow (login, register)
 - Deployment scripts: Docker, Gunicorn / Nginx, Heroku
@@ -22,7 +24,7 @@ Open-Source **Flask** starter coded with basic modules, database, ORM, and deplo
 
 <br />
 
-![Flask Material Kit - Open-source Flask starter.](https://user-images.githubusercontent.com/51070104/120080775-16e20900-c0c3-11eb-867b-c67bb165012f.png)
+![Flask Material Kit 2 - Starter provided by AppSeed.](https://user-images.githubusercontent.com/51070104/139474054-a223e8e0-d441-4f9f-8237-627a77bdd49c.gif)
 
 <br />
 
@@ -73,7 +75,6 @@ The project has a super simple structure, represented as bellow:
 ```bash
 < PROJECT ROOT >
    |
-   |-- app/__init__.py
    |-- app/
    |    |-- static/
    |    |    |-- <css, JS, images>         # CSS files, Javascripts files
@@ -97,17 +98,70 @@ The project has a super simple structure, represented as bellow:
    |    |    |    |-- login.html           # Use layout `base-fullscreen.html`
    |    |    |    |-- register.html        # Use layout `base-fullscreen.html`  
    |    |    |
-   |    |  index.html                      # The default page
-   |    |  page-404.html                   # Error 404 page (page not found)
-   |    |  page-500.html                   # Error 500 page (server error)
-   |    |    *.html                        # All other pages provided by the UI Kit
+   |    |    |-- home/                      # UI Kit Pages
+   |    |         |-- index.html            # Index page
+   |    |         |-- 404-page.html         # 404 page
+   |    |         |-- *.html                # All other pages
+   |    |
+   |   config.py                            # Provides APP Configuration 
+   |   forms.py                             # Defines Forms (login, register) 
+   |   models.py                            # Defines app models 
+   |   views.py                             # Application Routes 
+   |
+   |-- Dockerfile                           # Deployment
+   |-- docker-compose.yml                   # Deployment
+   |-- gunicorn-cfg.py                      # Deployment   
+   |-- nginx                                # Deployment
+   |    |-- appseed-app.conf                # Deployment 
    |
    |-- requirements.txt
-   |
    |-- run.py
    |
    |-- ************************************************************************
 ```
+
+<br />
+
+## Recompile CSS
+
+To recompile SCSS files, follow this setup:
+
+<br />
+
+**Step #1** - Install tools
+
+- [NodeJS](https://nodejs.org/en/) 12.x or higher
+- [Gulp](https://gulpjs.com/) - globally 
+    - `npm install -g gulp-cli`
+- [Yarn](https://yarnpkg.com/) (optional) 
+
+<br />
+
+**Step #2** - Change the working directory to `assets` folder
+
+```bash
+$ cd app/static/assets
+```
+
+<br />
+
+**Step #3** - Install modules (this will create a classic `node_modules` directory)
+
+```bash
+$ npm install
+// OR
+$ yarn
+```
+
+<br />
+
+**Step #4** - Edit & Recompile SCSS files 
+
+```bash
+$ gulp scss
+```
+
+The generated file is saved in `static/assets/css` directory.
 
 <br />
 
@@ -135,7 +189,7 @@ $ cd flask-material-kit
 $ sudo docker-compose pull && sudo docker-compose build && sudo docker-compose up -d
 ```
 
-Visit `http://localhost:5005` in your browser. The app should be up & running.
+Visit `http://localhost:85` in your browser. The app should be up & running.
 
 <br />
 
