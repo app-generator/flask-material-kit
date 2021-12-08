@@ -1,4 +1,4 @@
-# Flask Material Kit
+# [Flask Material Kit](https://appseed.us/apps/flask-apps/flask-material-kit)
 
 Open-Source **Flask** starter coded with basic modules, database, ORM, and deployment scripts on top of **Material Kit** (free version). For newcomers, Material Kit is a Free Bootstrap 4 UI Kit with a fresh, new design inspired by Google's material design. This simple Flask project can be used to code beautiful websites with a modern design.
 
@@ -18,9 +18,27 @@ Open-Source **Flask** starter coded with basic modules, database, ORM, and deplo
 
 > Links
 
-- [Flask Material Kit](https://appseed.us/boilerplate-code/flask-boilerplate) - product page
+- [Flask Material Kit](https://appseed.us/apps/flask-apps/flask-material-kit) - product page
 - [Flask Material Kit](https://flask-material-kit.appseed-srv1.com) - LIVE Demo
-- [Flask Material Kit](https://docs.appseed.us/products/flask-apps/material-kit) - product documentation
+
+<br />
+
+## Quick Start in [Docker](https://www.docker.com/)
+
+> Get the code
+
+```bash
+$ git clone https://github.com/app-generator/flask-material-kit.git
+$ cd flask-material-kit
+```
+
+> Start the app in Docker
+
+```bash
+$ docker-compose up --build 
+```
+
+Visit `http://localhost:85` in your browser. The app should be up & running.
 
 <br />
 
@@ -169,30 +187,6 @@ The generated file is saved in `static/assets/css` directory.
 
 The app is provided with a basic configuration to be executed in [Docker](https://www.docker.com/), [Heroku](https://www.heroku.com/), [Gunicorn](https://gunicorn.org/), and [Waitress](https://docs.pylonsproject.org/projects/waitress/en/stable/).
 
-<br />
-
-### [Docker](https://www.docker.com/) execution
----
-
-The application can be easily executed in a docker container. The steps:
-
-> Get the code
-
-```bash
-$ git clone https://github.com/app-generator/flask-material-kit.git
-$ cd flask-material-kit
-```
-
-> Start the app in Docker
-
-```bash
-$ sudo docker-compose pull && sudo docker-compose build && sudo docker-compose up -d
-```
-
-Visit `http://localhost:85` in your browser. The app should be up & running.
-
-<br />
-
 ### [Heroku](https://www.heroku.com/)
 ---
 
@@ -279,4 +273,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-Flask Material Kit - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
+[Flask Material Kit](https://appseed.us/apps/flask-apps/flask-material-kit) - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
