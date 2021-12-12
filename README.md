@@ -20,7 +20,7 @@
 
 - 👉 [Flask Material Kit](https://appseed.us/apps/flask-apps/flask-material-kit) - product page
 - 👉 [Flask Material Kit](https://flask-material-kit.appseed-srv1.com) - LIVE Demo
-- 👉 More [Flask Apps](https://appseed.us/apps/flask-apps) - provided by AppSeed 
+- 👉 More [Flask Apps](https://appseed.us/apps/flask-apps) - provided by AppSeed
 
 <br />
 
