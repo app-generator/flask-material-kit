@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.4] 2021-01-19
+### Improvements
+
+- Migrate all UI kit pages to Jinja
+  
 ## [1.0.3] 2022-01-17
 ### Improvements
 

@@ -1,7 +1,7 @@
 {
     "name": "flask-material-kit",
     "mastertemplate": "boilerplate-code-flask",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Template project - Flask Boilerplate Code",
     "scripts": {},
     "repository": {
