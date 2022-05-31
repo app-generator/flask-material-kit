@@ -4,7 +4,7 @@
 ### Improvements
 
 - Built with [Material Kit Generator](https://appseed.us/generator/material-kit/)
- - Timestamp: `2022-05-25 21:49`
+ - Timestamp: `2022-05-31 07:59`
 - Codebase refactoring
 - Added CDN Support
   - via `.env` **ASSETS_ROOT**  
