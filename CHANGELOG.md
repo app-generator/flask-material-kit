@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.6] 2022-06-08
+### Improvements
+
+- Built with [Material Kit Generator](https://appseed.us/generator/material-kit/)
+ - Timestamp: `2022-06-08 12:24`
+
 ## [1.0.5] 2022-05-25
 ### Improvements
 
