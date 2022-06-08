@@ -4,6 +4,13 @@
 
 - 👉 [Flask Material Kit](https://appseed.us/product/material-kit/flask/) - product page
 - 👉 [Flask Material Kit](https://flask-material-kit.appseed-srv1.com/) - LIVE App
+- 👉 [Complete documentation](https://docs.appseed.us/products/flask-apps/material-kit) - `Learn how to use and update the product`
+  - ✅ [Set up the environment](https://docs.appseed.us/products/flask-apps/material-kit#environment)
+  - ✅ [Start the app in Docker](https://docs.appseed.us/products/flask-apps/material-kit#start-the-app-in-docker)
+  - ✅ [Manual Build](https://docs.appseed.us/products/flask-apps/material-kit#manual-build)
+  - ✅ [UI Assets and Templates](https://docs.appseed.us/products/flask-apps/material-kit#ui-assets-and-templates)
+  - ✅ [Set up the MySql Database](https://docs.appseed.us/products/flask-apps/material-kit#set-up-the-mysql-database)
+  - ✅ [Static Assets for production](https://docs.appseed.us/products/flask-apps/material-kit#static-assets-for-production)  
 
 <br />
 
