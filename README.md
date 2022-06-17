@@ -5,12 +5,7 @@
 - 👉 [Flask Material Kit](https://appseed.us/product/material-kit/flask/) - product page
 - 👉 [Flask Material Kit](https://flask-material-kit.appseed-srv1.com/) - LIVE App
 - 👉 [Complete documentation](https://docs.appseed.us/products/flask-apps/material-kit) - `Learn how to use and update the product`
-  - ✅ [Set up the environment](https://docs.appseed.us/products/flask-apps/material-kit#environment)
-  - ✅ [Start the app in Docker](https://docs.appseed.us/products/flask-apps/material-kit#start-the-app-in-docker)
-  - ✅ [Manual Build](https://docs.appseed.us/products/flask-apps/material-kit#manual-build)
-  - ✅ [UI Assets and Templates](https://docs.appseed.us/products/flask-apps/material-kit#ui-assets-and-templates)
-  - ✅ [Set up the MySql Database](https://docs.appseed.us/products/flask-apps/material-kit#set-up-the-mysql-database)
-  - ✅ [Static Assets for production](https://docs.appseed.us/products/flask-apps/material-kit#static-assets-for-production)  
+- ✅ [PRO Version Available](#pro-version) - `enhanced UI` and more `features`  
 
 <br />
 
@@ -252,14 +247,15 @@ The project is coded using blueprints, app factory pattern, dual configuration p
 
 <br />
 
-## ✨ PRO Version
+## PRO Version
 
 > For more components, pages and priority on support, feel free to take a look at this amazing starter:
 
 **Material Kit 2** is a premium design crafted by the `Creative-Tim` agency on top of Bootstrap 5 Framework. Designed for those who like bold elements and beautiful websites, Material Kit 2 is made of hundreds of elements, designed blocks, and fully coded pages built with an impressive level of quality.
 
 - 👉 [Flask Material Kit2 PRO](https://appseed.us/product/material-kit2-pro/flask/) - product page
-- 👉 [Flask Material Kit2 PRO](https://flask-material-kit2-pro.appseed-srv1.com/) - LIVE Demo
+  - ✅ `Enhanced UI` - more pages and components
+  - ✅ `Priority` on support
 
 <br >
 
