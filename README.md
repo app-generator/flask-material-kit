@@ -11,7 +11,7 @@
 > Built with [App Generator](https://appseed.us/generator/), Timestamp: `2022-06-08 12:24`
 
 - `Up-to-date dependencies`
-- Database: `mysql`
+- Database: `sqlite`
 - `DB Tools`: SQLAlchemy ORM, Flask-Migrate (schema migrations)
 - Session-Based authentication (via **flask_login**), Forms validation
 
@@ -51,45 +51,6 @@ $ docker-compose up --build
 Visit `http://localhost:5085` in your browser. The app should be up & running.
 
 <br />
-
-## ✨ Set up the MySql Database
-
-**Note:** Make sure your Mysql server is properly installed and accessible. 
-
-> **Step 1** - Create the MySql Database to be used by the app
-
-- `Create a new MySql` database
-- `Create a new user` and assign full privilegies (read/write)
-
-<br />
-
-> **Step 2** - Edit the `.env` to match your MySql DB credentials. Make sure `DB_ENGINE` is set to `mysql`.
-
-- `DB_ENGINE`  : `mysql` 
-- `DB_NAME`    : default value = `appseed_db`
-- `DB_HOST`    : default value = `localhost`
-- `DB_PORT`    : default value = `3306`
-- `DB_USERNAME`: default value = `appseed_db_usr`
-- `DB_PASS`    : default value = `pass`
-
-<br />
-
-Here is a sample:  
-
-```txt
-# .env sample
-
-DEBUG=False                   # False enables the MySql Persistence
-
-DB_ENGINE=mysql               # Database Driver
-DB_NAME=appseed_flask         # Database Name
-DB_USERNAME=appseed_flask_usr # Database User
-DB_PASS=STRONG_PASS_HERE      # Password 
-DB_HOST=localhost             # Database HOST, default is localhost 
-DB_PORT=3306                  # MySql port, default = 3306 
-```
-
-<br /> 
 
 ## ✨ How to use it
 
