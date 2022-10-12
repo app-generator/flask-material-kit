@@ -34,15 +34,7 @@ $ cd flask-material-kit
 
 <br />
 
-> **Step 2** - Edit `.env` and set `DEBUG=True`. This will activate the `SQLite` persistance. 
-
-```txt
-DEBUG=True
-```
-
-<br />
-
-> **Step 3** - Start the APP in `Docker`
+> **Step 2** - Start the APP in `Docker`
 
 ```bash
 $ docker-compose up --build 
