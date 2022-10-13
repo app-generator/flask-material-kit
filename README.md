@@ -21,7 +21,6 @@
 
 <br />
 
-
 ## ✨ Start the app in Docker
 
 > **Step 1** - Download the code from the GH repository (using `GIT`) 
@@ -49,7 +48,6 @@ Visit `http://localhost:5085` in your browser. The app should be up & running.
 > Download the code 
 
 ```bash
-$ # Get the code
 $ git clone https://github.com/app-generator/flask-material-kit.git
 $ cd flask-material-kit
 ```
