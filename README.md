@@ -14,7 +14,7 @@
 - ✅ Database: `sqlite`
 - ✅ `DB Tools`: SQLAlchemy ORM, Flask-Migrate (schema migrations)
 - ✅ Session-Based authentication (via **flask_login**), Forms validation
-- `Docker`
+- ✅ `Docker`
 
 <br />
 
