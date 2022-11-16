@@ -4,7 +4,8 @@
 
 - 👉 [Flask Material Kit](https://appseed.us/product/material-kit/flask/) - product page
 - 👉 [Flask Material Kit](https://flask-material-kit.appseed-srv1.com/) - LIVE App
-- 👉 [Complete documentation](https://docs.appseed.us/products/flask-apps/material-kit) - `Learn how to use and update the product`
+- ✅ Compatible with [LIVE Deployer](https://appseed.us/go-live/)
+  - `Drag & drop` deployment service 
 
 <br />
 
