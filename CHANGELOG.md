@@ -4,7 +4,7 @@
 ### Improvements
 
 - Compatible with [LIVE Deployer](https://appseed.us/go-live/)
-  - `Drag & Drop` deployment service 
+  - [Deploy Flask MKit with Drag & Drop](https://www.youtube.com/watch?v=I8G-0AO64Yo) - `video material`
 
 ## [1.0.6] 2022-06-08
 ### Improvements
