@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.10] 2023-01-03
+### Changes
+
+- `DOCS Update` (readme)
+  - [Flask Material Kit - Go LIVE](https://www.youtube.com/watch?v=bSFw6xrd57w) (`video presentation`)
+
 ## [1.0.9] 2023-01-03
 ### Changes
 
