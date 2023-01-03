@@ -4,18 +4,20 @@
 
 - 👉 [Flask Material Kit](https://appseed.us/product/material-kit/flask/) - product page
 - 👉 [Flask Material Kit](https://flask-material-kit.appseed-srv1.com/) - LIVE App
-- ✅ Compatible with [LIVE Deployer](https://appseed.us/go-live/)
-  - [Deploy Flask MKit with Drag & Drop](https://www.youtube.com/watch?v=I8G-0AO64Yo) - `video material`
+- 👉 Free [Support](https://appseed.us/support/) via `Email` & `Discord`
 
 <br />
 
 > 🚀 Built with [App Generator](https://appseed.us/generator/), Timestamp: `2022-06-08 12:24`
 
 - ✅ `Up-to-date dependencies`
-- ✅ Database: `sqlite`
+- ✅ `Database`: `SQLite`, MySql
+  - Silent fallback to `SQLite`
 - ✅ `DB Tools`: SQLAlchemy ORM, Flask-Migrate (schema migrations)
 - ✅ Session-Based authentication (via **flask_login**), Forms validation
-- ✅ `Docker`
+- ✅ Docker, `Flask-Minify` (page compression)
+- 🚀 `Deployment` 
+  - `CI/CD` flow via `Render`
 
 <br />
 
