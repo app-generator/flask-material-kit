@@ -4,20 +4,111 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 from apps.home import blueprint
-from flask import render_template, request
+from flask import render_template, request, Flask
 from flask_login import login_required
 from jinja2 import TemplateNotFound
+import datetime
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import create_engine
+import psycopg2
+import os
+from sqlalchemy.orm import sessionmaker
+import requests
+import json
+from apps.authentication.models import Resources
+from sqlalchemy import or_
+from flask_msearch import Search
+from apps.authentication.models import Post
+from flask import current_app
+from googlesearch import search
 
 
+# don't touch this 
 @blueprint.route('/index')
-@login_required
+#@login_required
 def index():
-
     return render_template('home/index.html', segment='index')
 
 
+@blueprint.route('/climate-change-info.html')
+def climate_change_info():
+    results=[]
+    results = Resources.query.with_entities(Resources.title, Resources.website).filter_by(topic_group=1).all()
+    return render_template('home/climate-change-info.html', results=results)
+
+@blueprint.route('/global-aviation-impact.html')
+def global_aviation_impact():
+    results=[]
+    results = Resources.query.with_entities(Resources.title, Resources.website).filter_by(topic_group=2).all()
+    return render_template('home/global-aviation-impact.html', results=results)
+
+@blueprint.route('/climate-economics.html')
+def climate_economics():
+    results=[]
+    results = Resources.query.with_entities(Resources.title, Resources.website).filter_by(topic_group=3).all()
+    return render_template('home/climate-economics.html', results=results)
+
+@blueprint.route('/alternatives-to-traditional-aviation.html')
+def alternatives_to_traditional_aviation():
+    results=[]
+    results = Resources.query.with_entities(Resources.title, Resources.website).filter_by(topic_group=4).all()
+    return render_template('home/alternatives-to-traditional-aviation.html', results=results)
+
+@blueprint.route('/carbon-information.html')
+def carbon_info():
+    results=[]
+    results = Resources.query.with_entities(Resources.title, Resources.website).filter_by(topic_group=5).all()
+    return render_template('home/carbon-information.html', results=results)
+
+@blueprint.route('/airport-sustainability.html')
+def airport_sustainability():
+    results=[]
+    results = Resources.query.with_entities(Resources.title, Resources.website).filter_by(topic_group=6).all()
+    return render_template('home/airport-sustainability.html', results=results)
+
+@blueprint.route('/faa-guidance.html')
+def faa_guidance():
+    results=[]
+    results = Resources.query.with_entities(Resources.title, Resources.website).filter_by(topic_group=7).all()
+    return render_template('home/faa-guidance.html', results=results)
+
+@blueprint.route('/policy-surveys-opposition.html')
+def policy_surveys_opposition():
+    results=[]
+    results = Resources.query.with_entities(Resources.title, Resources.website).filter_by(topic_group=8).all()
+    return render_template('home/policy-surveys-opposition.html', results=results)
+
+#@blueprint.route('/search/')
+#def search():
+#    keyword = request.args.get('query')
+#    posts = Post.query.msearch(keyword,fields=['title','topic_group','subtopic1','subtopic2','subtopic3','subtopic4','subtopic5','subtopic6','subtopic7','subtopic8'])
+#    return render_template("search.html",title='Searching..' + keyword, posts=posts)
+
+# @blueprint.route('/search.html')
+# def index():
+#     return render_template("search.html")
+
+# @blueprint.route("/search-results.html", methods=["GET","POST"])
+# def search_results():
+#     if request.method == "POST":
+#         # get search keyword entered by user
+#         keyword = request.form["keyword"]
+
+#         # search database
+#         gra_results = Resources.query.with_entities(Resources.title, Resources.website).filter(Resources.topic_title.ilike(f"%{keyword}%",))
+
+#         # search google
+#         goog_results = list(search(keyword, num_results=10, api_key=os.get_env('YOUR_API_KEY'), cx=os.get_env('YOUR_SEARCH_ENGINE_ID_ACRP')))
+
+#         # combine results
+#         results = gra_results + goog_results
+
+#         return render_template("search-results.html", keyword=keyword, results=results)
+
+#     return render_template("search.html")
+
 @blueprint.route('/<template>')
-@login_required
+#@login_required
 def route_template(template):
 
     try:

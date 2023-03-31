@@ -1,8 +1,3 @@
-# -*- encoding: utf-8 -*-
-"""
-Copyright (c) 2019 - present AppSeed.us
-"""
-
 import os, random, string
 
 class Config(object):
@@ -19,14 +14,14 @@ class Config(object):
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    DB_ENGINE   = os.getenv('DB_ENGINE'   , None)
-    DB_USERNAME = os.getenv('DB_USERNAME' , None)
-    DB_PASS     = os.getenv('DB_PASS'     , None)
-    DB_HOST     = os.getenv('DB_HOST'     , None)
+    DB_ENGINE   = os.getenv('DB_ENGINE'   , default='postgresql')
+    DB_USERNAME = os.getenv('DB_USERNAME' , default='postgres')
+    DB_PASS     = os.getenv('DB_PASSWORD' , None)
+    DB_HOST     = os.getenv('DB_HOST'     , default='localhost')
     DB_PORT     = os.getenv('DB_PORT'     , None)
     DB_NAME     = os.getenv('DB_NAME'     , None)
 
-    USE_SQLITE  = True 
+    USE_SQLITE  = False
 
     # try to set up a Relational DBMS
     if DB_ENGINE and DB_NAME and DB_USERNAME:
@@ -54,6 +49,7 @@ class Config(object):
 
         # This will create a file in <app> FOLDER
         SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'db.sqlite3')
+        #SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI')
     
 class ProductionConfig(Config):
     DEBUG = False

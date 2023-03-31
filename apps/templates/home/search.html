@@ -1,0 +1,54 @@
+{% include 'includes/navigation-transparent.html' %}
+
+
+<!-- <form method="get" action="https://www.google.com/search">
+    <input type="text" name="q" size="40" placeholder="Search...">
+    <input type="submit" value="Search">
+</form>-->
+
+<form method="GET" action="/search/">
+  <input type="text" name="query" class="form-control" placeholder="Search..." />
+  <button type="submit" class="btn btn-light-primary font-weight-bold">
+  </button>
+</form>
+
+
+<section class="">
+  <p><strong>Search</strong></p>
+
+  <div class="input-group">
+    <div class="form-outline">
+      <input type="search" id="form1" class="form-control" />
+      <label class="form-label" for="form1">Search</label>
+    </div>
+    <button type="button" class="btn btn-primary">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+</section>
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+  {% include 'includes/navigation-transparent.html' %}  
+
+  <div class="container">
+    <form method="POST" action="{{ url_for('search') }}">
+      <div class="input-group">
+        <input type="text" class="form-control" name="query" placeholder="Search for more resources...">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="submit">
+            <i class="material-icons">search</i>
+            <span>Search</span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+{% endblock %}
+
+
+
+
+
