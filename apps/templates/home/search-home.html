@@ -1,0 +1,44 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Template Page {% endblock %} 
+
+{% block body_class %} index-page {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  {% include 'includes/navigation-transparent.html' %} 
+
+  <div class="page-header min-vh-80" style="background-image: url('/static/assets/img/map_outline_airplane.jpg')">
+    <span class="mask bg-gradient-dark opacity-6"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="text-center">
+            <h1 class="text-white">Extended Search Function</h1>
+            <p class="text-white">Input a few keywords below to populate resources from the internal database and Google. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="py-7">
+    <div class="container">
+      <div class="row justify-space-between py-2">
+        <div class="col-lg-5 mx-auto">
+          <div class="input-group input-group-dynamic mb-4">
+            <span class="input-group-text"><i class="fas fa-search" aria-hidden="true"></i></span>
+            <input class="form-control" placeholder="Search criteria (eg. airports respond to climate change)" type="text" >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

@@ -84,28 +84,34 @@ def policy_surveys_opposition():
 #    posts = Post.query.msearch(keyword,fields=['title','topic_group','subtopic1','subtopic2','subtopic3','subtopic4','subtopic5','subtopic6','subtopic7','subtopic8'])
 #    return render_template("search.html",title='Searching..' + keyword, posts=posts)
 
-# @blueprint.route('/search.html')
-# def index():
-#     return render_template("search.html")
+@blueprint.route('/search-home')
+def search_home():
+    return render_template('search-home.html')
 
-# @blueprint.route("/search-results.html", methods=["GET","POST"])
-# def search_results():
-#     if request.method == "POST":
-#         # get search keyword entered by user
-#         keyword = request.form["keyword"]
+@blueprint.route("/search2", methods=['GET','POST'])
+def search():
+    if request.method == 'POST':
+        # get search keyword entered by user
+        keyword = request.form["keyword"]
 
-#         # search database
-#         gra_results = Resources.query.with_entities(Resources.title, Resources.website).filter(Resources.topic_title.ilike(f"%{keyword}%",))
+        # search database
+        #gra_results = Resources.query.with_entities(Resources.title, Resources.website).filter(Resources.topic_title.ilike(f"%{keyword}%",))
+        gra_results = Resources.query.filter(Resources.title.ilike(f'%{keyword}%')).all()
 
-#         # search google
-#         goog_results = list(search(keyword, num_results=10, api_key=os.get_env('YOUR_API_KEY'), cx=os.get_env('YOUR_SEARCH_ENGINE_ID_ACRP')))
+        # search google
+        #goog_results = list(search(keyword, num_results=10, api_key=os.get_env('YOUR_API_KEY'), cx=os.get_env('YOUR_SEARCH_ENGINE_ID_ACRP')))
+        goog_results = list(search(keyword, num_results=10))
 
-#         # combine results
-#         results = gra_results + goog_results
+        # combine results
+        results = []
+        for rec in gra_results:
+            results.append({'title':rec.title, 'website':rec.website})
+        for url in goog_results:
+            results.append({'title': url, 'url': url})
 
-#         return render_template("search-results.html", keyword=keyword, results=results)
+        return render_template("search-results2.html", keyword=keyword, results=results)
 
-#     return render_template("search.html")
+    return render_template("search2.html")
 
 @blueprint.route('/<template>')
 #@login_required
