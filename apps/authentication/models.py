@@ -48,7 +48,6 @@ def request_loader(request):
     user = Users.query.filter_by(username=username).first()
     return user if user else None
 
-
 class Resources(db.Model):
 
     __tablename__ = 'resources'

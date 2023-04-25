@@ -28,14 +28,19 @@
     <div class="container">
       <div class="row justify-space-between py-2">
         <div class="col-lg-5 mx-auto">
-          <div class="input-group input-group-dynamic mb-4">
-            <span class="input-group-text"><i class="fas fa-search" aria-hidden="true"></i></span>
-            <input class="form-control" placeholder="Search criteria (eg. airports respond to climate change)" type="text" >
+          <div class="input-group input-group-static mb-4">
+            <form action="/search" method="get"> 
+              <label>Search Criteria</label>
+              <input class="form-control" placeholder="eg. airports respond to climate change" type="text" >
+              <a href="/climate-change-info.html" class="btn btn-white btn-sm w-50 mx-auto mt-3">Search</a>
+          </form>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+
 
 
 {% endblock content %}

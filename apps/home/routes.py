@@ -23,6 +23,7 @@ from flask import current_app
 from googlesearch import search
 
 
+
 # don't touch this 
 @blueprint.route('/index')
 #@login_required
@@ -84,12 +85,27 @@ def policy_surveys_opposition():
 #    posts = Post.query.msearch(keyword,fields=['title','topic_group','subtopic1','subtopic2','subtopic3','subtopic4','subtopic5','subtopic6','subtopic7','subtopic8'])
 #    return render_template("search.html",title='Searching..' + keyword, posts=posts)
 
-@blueprint.route('/search-home')
-def search_home():
-    return render_template('search-home.html')
+# @blueprint.route('/search-home', methods=["GET", "POST"])
+# def search():
+#     if request.method == "POST":
+#         query = request.form.get("search")
+#         print(query)
+#         return query
+#     else:
+#         return render_template('search-home.html')
+    
+@blueprint.route("/search", methods=["GET","POST"])
+def search():
+    """
+    1. Capture the word that is being searched
+    2. Search for the word on Google and display results
+    """
+    args = request.args.get("q")
+    return redirect(f'https://google.com/search?q={args}')
+
 
 @blueprint.route("/search2", methods=['GET','POST'])
-def search():
+def search1():
     if request.method == 'POST':
         # get search keyword entered by user
         keyword = request.form["keyword"]
@@ -112,6 +128,11 @@ def search():
         return render_template("search-results2.html", keyword=keyword, results=results)
 
     return render_template("search2.html")
+
+# @blueprint.route("/search-home",methods =['POST','GET'])
+# def main():
+#     form = BasicForm()
+#     return render_template("search-home.html",form = form)
 
 @blueprint.route('/<template>')
 #@login_required
