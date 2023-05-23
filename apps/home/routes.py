@@ -93,65 +93,80 @@ def policy_surveys_opposition():
 #         return query
 #     else:
 #         return render_template('search-home.html')
+
+
     
-@blueprint.route("/search", methods=["GET","POST"])
-def search():
-    """
-    1. Capture the word that is being searched
-    2. Search for the word on Google and display results
-    """
-    args = request.args.get("q")
-    return redirect(f'https://google.com/search?q={args}')
+# @blueprint.route("/search", methods=["GET","POST"])
+# def search():
+#     """
+#     1. Capture the word that is being searched
+#     2. Search for the word on Google and display results
+#     """
+#     args = request.args.get("q")
+#     return redirect(f'https://google.com/search?q={args}')
 
 
-@blueprint.route("/search2", methods=['GET','POST'])
-def search1():
-    if request.method == 'POST':
-        # get search keyword entered by user
-        keyword = request.form["keyword"]
+# @blueprint.route("/search2", methods=['GET','POST'])
+# def search1():
+#     if request.method == 'POST':
+#         # get search keyword entered by user
+#         keyword = request.form["keyword"]
 
-        # search database
-        #gra_results = Resources.query.with_entities(Resources.title, Resources.website).filter(Resources.topic_title.ilike(f"%{keyword}%",))
-        gra_results = Resources.query.filter(Resources.title.ilike(f'%{keyword}%')).all()
+#         # search database
+#         #gra_results = Resources.query.with_entities(Resources.title, Resources.website).filter(Resources.topic_title.ilike(f"%{keyword}%",))
+#         gra_results = Resources.query.filter(Resources.title.ilike(f'%{keyword}%')).all()
 
-        # search google
-        #goog_results = list(search(keyword, num_results=10, api_key=os.get_env('YOUR_API_KEY'), cx=os.get_env('YOUR_SEARCH_ENGINE_ID_ACRP')))
-        goog_results = list(search(keyword, num_results=10))
+#         # search google
+#         #goog_results = list(search(keyword, num_results=10, api_key=os.get_env('YOUR_API_KEY'), cx=os.get_env('YOUR_SEARCH_ENGINE_ID_ACRP')))
+#         goog_results = list(search(keyword, num_results=10))
 
-        # combine results
-        results = []
-        for rec in gra_results:
-            results.append({'title':rec.title, 'website':rec.website})
-        for url in goog_results:
-            results.append({'title': url, 'url': url})
+#         # combine results
+#         results = []
+#         for rec in gra_results:
+#             results.append({'title':rec.title, 'website':rec.website})
+#         for url in goog_results:
+#             results.append({'title': url, 'url': url})
 
-        return render_template("search-results2.html", keyword=keyword, results=results)
+#         return render_template("search-results2.html", keyword=keyword, results=results)
 
-    return render_template("search2.html")
+#     return render_template("search2.html")
 
-# @blueprint.route("/search-home",methods =['POST','GET'])
-# def main():
-#     form = BasicForm()
-#     return render_template("search-home.html",form = form)
+
+# @blueprint.route('/search-home', methods=['GET','POST'])
+# def search():
+#     query = request.form['query']
+#     results = perform_google_search(query)
+#     return render_template('search-results2.html', query=query, results=results)
+
+# def perform_google_search(query):
+#     api_key = 'AIzaSyDDRJijGYKeAfDEUywTOM3AfvHx1Tc_Eho'
+#     search_engine_id = '13b46c106c4834523' 
+#     url = f'https://www.googleapis.com/customsearch/v1?key={api_key}&cx={search_engine_id}&q={query}'
+
+#     response = requests.get(url)
+#     data = response.json()
+
+#     if 'items' in data:
+#         results = data['items']
+#         return results
+
+#     return []
+
 
 @blueprint.route('/<template>')
 #@login_required
 def route_template(template):
 
     try:
-
         if not template.endswith('.html'):
             template += '.html'
-
         # Detect the current page
         segment = get_segment(request)
-
         # Serve the file (if exists) from app/templates/home/FILE.html
         return render_template("home/" + template, segment=segment)
 
     except TemplateNotFound:
         return render_template('home/page-404.html'), 404
-
     except:
         return render_template('home/page-500.html'), 500
 
@@ -160,12 +175,9 @@ def route_template(template):
 def get_segment(request):
 
     try:
-
         segment = request.path.split('/')[-1]
-
         if segment == '':
             segment = 'index'
-
         return segment
 
     except:

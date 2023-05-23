@@ -27,14 +27,19 @@
   <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
     <div class="container">
       <div class="section text-center">
-        <h2 class="title">Your main section here</h2>
+        <h2 class="title">Search results for {{keyword}}</h2>
+          <ul>
+            {% for result in results %}
+                <li>
+                    <a href="{{ result.link }}">{{ result.title }}</a>
+                    <p>{{ result.snippet }}</p>
+                </li>
+            {% endfor %}
+          </ul>
       </div>
     </div>
   </div>
-
-  <div class="container my-4">
-    <h1>Search results for "{{ keyword }}"
-
+  
 {% endblock content %}
 
 <!-- Specific Page JS goes HERE  -->

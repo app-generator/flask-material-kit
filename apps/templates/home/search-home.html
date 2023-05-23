@@ -18,7 +18,8 @@
         <div class="col-md-8 mx-auto">
           <div class="text-center">
             <h1 class="text-white">Extended Search Function</h1>
-            <p class="text-white">Input a few keywords below to populate resources from the internal database and Google. </p>
+          <!--  <p class="text-white">Input a few keywords below to populate resources from the internal database and Google. </p> -->
+            <p class="text-white">Click 'Submit' below to be taken to a customized search engine for optimized results. Input the keywords there to view top results.</p>
           </div>
         </div>
       </div>
@@ -27,13 +28,11 @@
   <section class="py-7">
     <div class="container">
       <div class="row justify-space-between py-2">
-        <div class="col-lg-5 mx-auto">
+        <div class="col-lg-7 mx-auto">
           <div class="input-group input-group-static mb-4">
-            <form action="/search" method="get"> 
-              <label>Search Criteria</label>
-              <input class="form-control" placeholder="eg. airports respond to climate change" type="text" >
-              <a href="/climate-change-info.html" class="btn btn-white btn-sm w-50 mx-auto mt-3">Search</a>
-          </form>
+            <label>Search Criteria</label>
+            <input class="form-control" placeholder="eg. airports respond to climate change" type="text" >
+            <a href="https://cse.google.com/cse?cx=13b46c106c4834523#gsc.tab=0" target="_blank" class="btn btn-white btn-sm w-50 mx-auto mt-3">Search</a>
           </div>
         </div>
       </div>
@@ -42,6 +41,16 @@
 
 
 
+<!--
+  <label>Search Criteria</label>
+            <input class="form-control" placeholder="eg. airports respond to climate change" type="text" >
+            <a href="https://cse.google.com/cse?cx=13b46c106c4834523#gsc.tab=0" class="btn btn-white btn-sm w-50 mx-auto mt-3">Search</a>
+      
+            <form action="/search" method="post">
+              <input type="text" name="query" placeholder="eg. airports respond to climate change">
+              <input type="submit" value="Search">
+            </form> 
+-->
 
 {% endblock content %}
 
