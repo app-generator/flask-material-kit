@@ -139,8 +139,8 @@ def policy_surveys_opposition():
 #     return render_template('search-results2.html', query=query, results=results)
 
 # def perform_google_search(query):
-#     api_key = 'AIzaSyDDRJijGYKeAfDEUywTOM3AfvHx1Tc_Eho'
-#     search_engine_id = '13b46c106c4834523' 
+#     api_key = os.getenv('YOUR_API_KEY')
+#     search_engine_id = os.getenv('YOUR_SEARCH_ENGINE_ID_ACRP')
 #     url = f'https://www.googleapis.com/customsearch/v1?key={api_key}&cx={search_engine_id}&q={query}'
 
 #     response = requests.get(url)
