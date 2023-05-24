@@ -26,7 +26,7 @@
 
 <br />
 
-## ✨ Start the app in Docker
+## Start with `Docker`
 
 > 👉 **Step 1** - Download the code from the GH repository (using `GIT`) 
 
@@ -147,7 +147,7 @@ https://user-images.githubusercontent.com/51070104/202416162-885c30d3-5066-40cb-
 
 <br />
 
-## ✨ Code-base structure
+## Codebase structure
 
 The project is coded using blueprints, app factory pattern, dual configuration profile (development and production) and an intuitive structure presented bellow:
 
@@ -200,7 +200,7 @@ The project is coded using blueprints, app factory pattern, dual configuration p
 
 <br />
 
-## PRO Version
+## [Flask Material Kit](https://appseed.us/product/material-kit2-pro/flask/) `PRO`
 
 > For more components, pages and priority on support, feel free to take a look at this amazing starter:
 
