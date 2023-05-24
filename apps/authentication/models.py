@@ -37,6 +37,10 @@ class Users(db.Model, UserMixin):
 
     def __repr__(self):
         return str(self.username)
+    
+class User:
+    def __init__(self, username):
+        self.username = username
 
 @login_manager.user_loader
 def user_loader(id):
