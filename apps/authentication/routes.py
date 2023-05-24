@@ -17,7 +17,7 @@ from apps.authentication.models import Users
 
 from apps.authentication.util import verify_pass
 
-from models import User
+from apps.authentication.models import User
 
 
 @blueprint.route('/')
