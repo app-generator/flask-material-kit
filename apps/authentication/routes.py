@@ -17,8 +17,6 @@ from apps.authentication.models import Users
 
 from apps.authentication.util import verify_pass
 
-from apps.authentication.models import User
-
 
 @blueprint.route('/')
 def route_default():
@@ -36,20 +34,12 @@ def login():
         username = request.form['username']
         password = request.form['password']
 
-        # Check if the provided credentials match the generic login
-        if username == 'admin' and password == 'pass':
-            # Create a temporary user object
-            user = User(username='admin')
-
-            login_user(user)
-            return redirect(url_for('authentication_blueprint.route_default'))
-
-        # Proceed with the existing user authentication logic
         # Locate user
         user = Users.query.filter_by(username=username).first()
 
         # Check the password
         if user and verify_pass(password, user.password):
+
             login_user(user)
             return redirect(url_for('authentication_blueprint.route_default'))
 

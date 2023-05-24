@@ -25,6 +25,7 @@ from flask import current_app
 
 # don't touch this 
 @blueprint.route('/index')
+# @login_required
 def index():
     return render_template('home/index.html', segment='index')
 
@@ -138,6 +139,7 @@ def policy_surveys_opposition():
 
 
 @blueprint.route('/<template>')
+# @login_required
 def route_template(template):
 
     try:
