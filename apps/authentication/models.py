@@ -43,14 +43,14 @@ class User:
         self.username = username
 
 @login_manager.user_loader
-# def user_loader(id):
-#     return Users.query.filter_by(id=id).first()
+def user_loader(id):
+    return Users.query.filter_by(id=id).first()
 
 @login_manager.request_loader
-# def request_loader(request):
-#     username = request.form.get('username')
-#     user = Users.query.filter_by(username=username).first()
-#     return user if user else None
+def request_loader(request):
+    username = request.form.get('username')
+    user = Users.query.filter_by(username=username).first()
+    return user if user else None
 
 class Resources(db.Model):
 
