@@ -20,7 +20,6 @@ from sqlalchemy import or_
 from flask_msearch import Search
 from apps.authentication.models import Post
 from flask import current_app
-from googlesearch import search
 
 
 
@@ -79,21 +78,6 @@ def policy_surveys_opposition():
     results = Resources.query.with_entities(Resources.title, Resources.website).filter_by(topic_group=8).all()
     return render_template('home/policy-surveys-opposition.html', results=results)
 
-#@blueprint.route('/search/')
-#def search():
-#    keyword = request.args.get('query')
-#    posts = Post.query.msearch(keyword,fields=['title','topic_group','subtopic1','subtopic2','subtopic3','subtopic4','subtopic5','subtopic6','subtopic7','subtopic8'])
-#    return render_template("search.html",title='Searching..' + keyword, posts=posts)
-
-# @blueprint.route('/search-home', methods=["GET", "POST"])
-# def search():
-#     if request.method == "POST":
-#         query = request.form.get("search")
-#         print(query)
-#         return query
-#     else:
-#         return render_template('search-home.html')
-
 
     
 # @blueprint.route("/search", methods=["GET","POST"])
@@ -132,6 +116,7 @@ def policy_surveys_opposition():
 #     return render_template("search2.html")
 
 
+###this is the code that is good I think, or almost good
 # @blueprint.route('/search-home', methods=['GET','POST'])
 # def search():
 #     query = request.form['query']
