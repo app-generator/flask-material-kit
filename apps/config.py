@@ -15,11 +15,11 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     DB_ENGINE   = os.getenv('DB_ENGINE'   , default='postgresql')
-    DB_USERNAME = os.getenv('DB_USERNAME' , default='postgres')
-    DB_PASS     = os.getenv('DB_PASSWORD' , None)
-    DB_HOST     = os.getenv('DB_HOST'     , default='localhost')
-    DB_PORT     = os.getenv('DB_PORT'     , None)
-    DB_NAME     = os.getenv('DB_NAME'     , None)
+    DB_USERNAME = os.getenv('RENDER_DB_USERNAME' , default='postgres')
+    DB_PASS     = os.getenv('RENDER_DB_PASSWORD' , None)
+    DB_HOST     = os.getenv('RENDER_DB_HOST'     , default='localhost')
+    DB_PORT     = os.getenv('RENDER_DB_PORT'     , None)
+    DB_NAME     = os.getenv('RENDER_DB_NAME'     , None)
 
     USE_SQLITE  = False
 
@@ -48,8 +48,8 @@ class Config(object):
     if USE_SQLITE:
 
         # This will create a file in <app> FOLDER
-        SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'db.sqlite3')
-        #SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI')
+        #SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'db.sqlite3')
+        SQLALCHEMY_DATABASE_URI = os.getenv('RENDER_DB_URL')
     
 class ProductionConfig(Config):
     DEBUG = False
