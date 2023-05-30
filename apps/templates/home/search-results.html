@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  {% include 'includes/navigation-transparent.html' %}
+
+  <div class="container">
+    <h1>Search Results for "{{ query }}"</h1>
+    <hr>
+    {% if results %}
+      <div class="row">
+        {% for item in results %}
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">{{ resources.title }}</h4>
+                <p class="card-text">{{ resources.website }}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>No results found.</p>
+    {% endif %}
+  </div>
+{% endblock %}
+
+<script async src="https://cse.google.com/cse.js?cx=b1122355079854cdd">
+</script>
+<div class="gcse-search"></div>
+

@@ -10,7 +10,6 @@ from flask_login import LoginManager
 from flask_sqlalchemy import SQLAlchemy
 from importlib import import_module
 
-
 db = SQLAlchemy()
 login_manager = LoginManager()
 
@@ -38,7 +37,7 @@ def configure_database(app):
 
             # fallback to SQLite
             basedir = os.path.abspath(os.path.dirname(__file__))
-            app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'db.sqlite3')
+            app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://mfoust:EulbogUuAHvQgUs9yG6DDY8BVV6MbeJi@dpg-chqvo0ik728ivvo2uhc0-a/acrpresources'
 
             print('> Fallback to SQLite ')
             db.create_all()
@@ -46,7 +45,6 @@ def configure_database(app):
     @app.teardown_request
     def shutdown_session(exception=None):
         db.session.remove() 
-
 
 def create_app(config):
     app = Flask(__name__)

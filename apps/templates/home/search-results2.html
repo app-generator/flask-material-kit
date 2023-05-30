@@ -1,0 +1,46 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Search Page {% endblock %} 
+
+{% block body_class %} index-page {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  {% include 'includes/navigation-transparent.html' %} 
+
+  <div class="page-header min-vh-80" style="background-image: url('/static/assets/img/map_outline_airplane.jpg')">
+    <span class="mask bg-gradient-dark opacity-6"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="text-center">
+            <h1 class="text-white">Search</h1>
+            <p class="lead mb-4 text-white opacity-8">Use the search below to find more results to match what you are looking for</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
+    <div class="container">
+      <div class="section text-center">
+        <h2 class="title">Search results for {{keyword}}</h2>
+          <ul>
+            {% for result in results %}
+                <li>
+                    <a href="{{ result.link }}">{{ result.title }}</a>
+                    <p>{{ result.snippet }}</p>
+                </li>
+            {% endfor %}
+          </ul>
+      </div>
+    </div>
+  </div>
+  
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

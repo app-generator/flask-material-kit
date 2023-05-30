@@ -3,7 +3,7 @@ services:
     name: flask-mkit2
     plan: starter
     env: python
-    region: frankfurt  # region should be same as your database region.
+    region: us-east-1  # region should be same as your database region.
     buildCommand: "./build.sh"
     startCommand: "gunicorn run:app"
     envVars:

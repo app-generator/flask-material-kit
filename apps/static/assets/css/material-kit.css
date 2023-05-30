@@ -29,7 +29,7 @@
   --bs-gray-900: #212529;
   --bs-primary: #e91e63;
   --bs-secondary: #7b809a;
-  --bs-success: #4CAF50;
+  --bs-success: #576c73;
   --bs-info: #1A73E8;
   --bs-warning: #fb8c00;
   --bs-danger: #F44335;
@@ -195,10 +195,10 @@ sup {
   top: -.5em; }
 
 a {
-  color: #e91e63;
+  color: #63B3ED;
   text-decoration: none; }
   a:hover {
-    color: #e91e63;
+    color: #63B3ED;
     text-decoration: none; }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -227,7 +227,7 @@ pre {
 
 code {
   font-size: 0.875em;
-  color: #d63384;
+  color: #63B3ED;
   word-wrap: break-word; }
   a > code {
     color: inherit; }
@@ -518,7 +518,7 @@ progress {
   padding-right: var(--bs-gutter-x, 1.5rem);
   padding-left: var(--bs-gutter-x, 1.5rem);
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;}
 
 @media (min-width: 576px) {
   .container, .container-sm {
@@ -2454,9 +2454,10 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.625rem 1.5rem;
-  font-size: 0.75rem;
+  font-size: 1.5rem;
   border-radius: 0.5rem;
-  transition: all 0.15s ease-in; }
+  transition: all 0.15s ease-in; 
+  text-transform: unset !important;}
   @media (prefers-reduced-motion: reduce) {
     .btn {
       transition: none; } }
@@ -2500,11 +2501,11 @@ textarea.form-control-lg {
 
 .btn-secondary {
   color: #000;
-  background-color: #7b809a;
-  border-color: #7b809a; }
+  background-color: #576c73;
+  border-color: #576c73; }
   .btn-secondary:hover {
     color: #000;
-    background-color: #8f93a9;
+    background-color: #6c868e;
     border-color: #888da4; }
   .btn-check:focus + .btn-secondary, .btn-secondary:focus {
     color: #000;
@@ -2926,7 +2927,8 @@ textarea.form-control-lg {
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.75rem 1.75rem;
   font-size: 0.875rem;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem; 
+  text-transform: none;}
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.375rem 1rem;
@@ -3787,7 +3789,7 @@ textarea.form-control-lg {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1rem 1rem; }
+  padding: 1rem 1rem;}
 
 .card-title {
   margin-bottom: 0.5rem; }
@@ -12947,11 +12949,11 @@ textarea.form-control-lg {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     padding: 1.5rem; }
   .card.card-plain {
-    background-color: transparent;
+    background-color: #f2f2f2;
     box-shadow: none; }
   .card .card-footer {
     padding: 1.5rem;
-    background-color: transparent; }
+    background-color: #ced4da; }
 
 .author {
   display: flex; }
@@ -12975,7 +12977,7 @@ textarea.form-control-lg {
     position: absolute;
     border-radius: 0.75rem; }
   .card.card-background .card-body {
-    color: #fff;
+    color: #f2f2f2;
     position: relative;
     z-index: 2; }
     .card.card-background .card-body .content-center,
@@ -12990,7 +12992,7 @@ textarea.form-control-lg {
       width: 90%; }
     .card.card-background .card-body .author .name span,
     .card.card-background .card-body .author .name .stats {
-      color: #fff; }
+      color: #ced4da; }
   .card.card-background:after {
     position: absolute;
     top: 0;
@@ -13101,8 +13103,8 @@ textarea.form-control-lg {
         top: 0;
         content: "";
         border-radius: 0.5rem;
-        background-image: linear-gradient(195deg, #EC407A, #D81B60);
-        opacity: .85; }
+        background-image: linear-gradient(195deg, #6B9CAD, #86A3A6);
+        opacity: .75; }
     .rotating-card-container .card .front {
       z-index: 2;
       position: relative; }
@@ -16084,7 +16086,7 @@ p {
   position: relative;
   z-index: 1; }
   .text-gradient.text-primary {
-    background-image: linear-gradient(195deg, #EC407A, #D81B60); }
+    background-image: linear-gradient(195deg, #63B3ED, #1A73E8); }
   .text-gradient.text-info {
     background-image: linear-gradient(195deg, #49a3f1, #1A73E8); }
   .text-gradient.text-success {

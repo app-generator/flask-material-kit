@@ -31,3 +31,7 @@ apps/static/assets/node_modules
 apps/static/assets/yarn.lock
 apps/static/assets/.temp
 
+Dockerfile
+docker-compose.yml
+Dockerfile
+docker-compose.yml
