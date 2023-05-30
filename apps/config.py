@@ -14,10 +14,10 @@ class Config(object):
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    DB_ENGINE   = os.getenv('DB_ENGINE'   , default='postgresql')
-    DB_USERNAME = os.getenv('RENDER_DB_USERNAME' , default='postgres')
+    DB_ENGINE   = os.getenv('DB_ENGINE'          , None)
+    DB_USERNAME = os.getenv('RENDER_DB_USERNAME' , None)
     DB_PASS     = os.getenv('RENDER_DB_PASSWORD' , None)
-    DB_HOST     = os.getenv('RENDER_DB_HOST'     , default='localhost')
+    DB_HOST     = os.getenv('RENDER_DB_HOST'     , None)
     DB_PORT     = os.getenv('RENDER_DB_PORT'     , None)
     DB_NAME     = os.getenv('RENDER_DB_NAME'     , None)
 
@@ -28,7 +28,7 @@ class Config(object):
 
         try:
             
-            # Relational DBMS: PSQL, MySql
+            #Relational DBMS: PSQL, MySql
             # SQLALCHEMY_DATABASE_URI = '{}://{}:{}@{}:{}/{}'.format(
             #     DB_ENGINE,
             #     DB_USERNAME,
