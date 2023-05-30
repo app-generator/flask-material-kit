@@ -37,7 +37,7 @@ def configure_database(app):
 
             # fallback to SQLite
             basedir = os.path.abspath(os.path.dirname(__file__))
-            app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI')
+            app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://mfoust:EulbogUuAHvQgUs9yG6DDY8BVV6MbeJi@dpg-chqvo0ik728ivvo2uhc0-a/acrpresources'
 
             print('> Fallback to SQLite ')
             db.create_all()
