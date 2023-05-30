@@ -37,7 +37,7 @@ class Config(object):
             #     DB_PORT,
             #     DB_NAME
             # ) 
-            SQLALCHEMY_DATABASE_URI = 'postgresql://mfoust:XyjzYX9Acng2dTwg4rIWFUA2Q6Osm2w5@dpg-chqva9fdvk4goev0hcv0-a/acrp_yq3c'
+            SQLALCHEMY_DATABASE_URI = 'postgresql://mfoust:EulbogUuAHvQgUs9yG6DDY8BVV6MbeJi@dpg-chqvo0ik728ivvo2uhc0-a.frankfurt-postgres.render.com/acrpresources'
 
             USE_SQLITE  = False
 
