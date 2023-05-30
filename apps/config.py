@@ -29,14 +29,15 @@ class Config(object):
         try:
             
             # Relational DBMS: PSQL, MySql
-            SQLALCHEMY_DATABASE_URI = '{}://{}:{}@{}:{}/{}'.format(
-                DB_ENGINE,
-                DB_USERNAME,
-                DB_PASS,
-                DB_HOST,
-                DB_PORT,
-                DB_NAME
-            ) 
+            # SQLALCHEMY_DATABASE_URI = '{}://{}:{}@{}:{}/{}'.format(
+            #     DB_ENGINE,
+            #     DB_USERNAME,
+            #     DB_PASS,
+            #     DB_HOST,
+            #     DB_PORT,
+            #     DB_NAME
+            # ) 
+            SQLALCHEMY_DATABASE_URI = 'postgresql://mfoust:XyjzYX9Acng2dTwg4rIWFUA2Q6Osm2w5@dpg-chqva9fdvk4goev0hcv0-a/acrp_yq3c'
 
             USE_SQLITE  = False
 
