@@ -46,6 +46,7 @@ def configure_database(app):
 def create_app(config):
     app = Flask(__name__)
     app.config.from_object(config)
+    app.config["SQLALCHEMY_DATABASE_URI"]= "postgresql://mfoust:EulbogUuAHvQgUs9yG6DDY8BVV6MbeJi@dpg-chqvo0ik728ivvo2uhc0-a.frankfurt-postgres.render.com/acrpresources"
     register_extensions(app)
     register_blueprints(app)
     configure_database(app)
