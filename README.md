@@ -108,11 +108,11 @@ $ pip3 install -r requirements.txt
 ```bash
 $ # CMD 
 $ set FLASK_APP=run.py
-$ set FLASK_ENV=development
+$ set FLASK_DEBUG=True
 $
 $ # Powershell
 $ $env:FLASK_APP = ".\run.py"
-$ $env:FLASK_ENV = "development"
+$ $env:FLASK_DEBUG = "True"
 ```
 
 <br />
@@ -136,16 +136,6 @@ By default, the app redirects guest users to authenticate. In order to access th
   - `http://127.0.0.1:5000/register`
 - Access the `sign in` page and authenticate
   - `http://127.0.0.1:5000/login`
-
-<br />
-
-## ✨ `Go LIVE` via [LIVE Deployer](https://appseed.us/go-live/)
-
-> This video explains `how to deploy` the product LIVE using a `Drag & Drop` gesture.
-
-<br />
-
-https://user-images.githubusercontent.com/51070104/202416162-885c30d3-5066-40cb-abcd-1668689c9463.mp4
 
 <br />
 

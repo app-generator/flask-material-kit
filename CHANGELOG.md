@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.13] 2024-10-17
+### Changes
+
+- Update Versions
+- Fix for Python 13
+
 ## [1.0.12] 2024-05-18
 ### Changes
 
