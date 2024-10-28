@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.15] 2024-10-28
+### Changes
+
+- Added `Deploy on Render` Button
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+
 ## [1.0.14] 2024-10-28
 ### Changes
 
