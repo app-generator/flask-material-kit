@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.16] 2024-11-21
+### Changes
+
+- Fix FA.js broken link
+
 ## [1.0.15] 2024-10-28
 ### Changes
 
