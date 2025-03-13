@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.17] 2025-03-13
+### Changes
+
+- Update Product Links to [App-Generator](https://app-generator.dev/) Service   
+- [Flask Material Kit](https://app-generator.dev/product/material-kit/flask/) - `Product Page`
+- [Flask Material Kit](https://flask-material-kit.appseed-srv1.com/) - `LIVE Demo` 
+- [Flask Material Kit](https://app-generator.dev/docs/products/flask/material-kit/index.html) - `Complete Information` and Support Links
+
 ## [1.0.16] 2024-11-21
 ### Changes
 
